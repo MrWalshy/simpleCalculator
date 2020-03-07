@@ -2,25 +2,15 @@
 #include <math.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <string.h>
+#include "mathfunc.h"
+#include "misc.h"
 
-// Function Prototype Declarations
-void addition();
-void subtraction();
-void multiplication();
-void division();
+char inputBuffer[14];
+double lastSumMemory = 0;
 
-char inputBuffer[256];
-
-static bool getInput(void)
-{
-    printf("--> ");
-        
-    if (fgets(inputBuffer, sizeof inputBuffer, stdin) == NULL)
-    {
-        printf("Input Error.\n");
-        exit(1);
-    }
-}
+void printMenu();
+void instructions();
 
 int main()
 {
@@ -29,14 +19,19 @@ int main()
 
     while (running)
     {
-        getInput(); 
+        printMenu();
+        getInput(inputBuffer);
+        system("clear");
+        printf("Enter '=' to finish, or 'm' to use the number in memory\n"); 
         operator = inputBuffer[0];
 
         switch(operator)
         {
             case '+':
-                printf("addition\n");
-                addition();
+                printf("Type a number & press enter, repeat to keep adding.\n");
+                lastSumMemory = addition(inputBuffer, lastSumMemory);
+                printf("Result is %f\n\n", lastSumMemory);
+                pressEnterToContinue();
                 break;
             case '-':
                 printf("subtraction\n");
@@ -48,15 +43,20 @@ int main()
                 printf("division\n");
                 break;
             case 'q':
+                system("clear");
                 printf("Quitting\n");
                 running = false;
                 break;
             case 'c':
                 system("clear");
                 break;
+            case 'h':
+                system("clear");
+                instructions();
+                pressEnterToContinue();
+                break;
             default:
                 system("clear");
-
                 printf("Unavailable Operation\n");
                 printf("Please enter a valid option: ");
                 break;
@@ -64,23 +64,33 @@ int main()
     }
 }
 
-void addition()
+void printMenu()
 {
-    int numsToAdd, i;
-    float total = 0, temp;
+    printf("-------------------------\n");
+    printf("|                       |\n");
+    printf("| simpleCalculator in C |\n");
+    printf("|                       |\n");
+    printf("-------------------------\n");
 
-    printf("Enter the number of elements you wish to add:\n");
-    getInput();
-    numsToAdd = atof(inputBuffer);
+    printf("| Addition          |'+'|\n");
+    printf("| Subtraction       |'-'| (Coming soon)\n");
+    printf("| Multiplication    |'*'| (Coming soon)\n");
+    printf("| Division          |'/'| (Coming soon)\n");
+    printf("| Help              |'h'|\n");
+    printf("| Quit              |'q'|\n");
+    printf("| Clear screen      |'c'|\n");
+}
 
-    for (i = 0; i < numsToAdd; i++) {
-        printf("Enter the number you wish to add:\n");
-        getInput();
-        temp = atof(inputBuffer);
-        total += temp;
-        printf("Total so far: %lf\n", total);
-    }
+void instructions()
+{
+    printf("--------- Main Menu Screen ---------\n");
+    printf("| Enter a operator and/or menu     |\n");
+    printf("| option to proceed.               |\n");
+    printf("------------------------------------\n");
 
-    system("clear");
-    printf("The total of your sum is %lf\n", total);
+    printf("---------  In Calculation  ---------\n");
+    printf("| '=' returns the result.          |\n");
+    printf("|----------------------------------|\n");
+    printf("| 'm' returns value in memory      |\n");
+    printf("------------------------------------\n");
 }

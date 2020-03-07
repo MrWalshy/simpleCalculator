@@ -1,1 +1,1 @@
-gcc main.c -o calculator
+gcc main.c mathfunc.c misc.c -o calculator
