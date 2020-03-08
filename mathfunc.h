@@ -1,1 +1,0 @@
-extern double addition(char *inputBuffer, double lastSum);

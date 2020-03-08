@@ -1,0 +1,171 @@
+[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J-------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finis[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2Jh, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Type a number & press enter, repeat to keep adding.
+--> --> --> Result is 30.000000
+
+Press ENTER to return to the menu...
+-------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Unavailable Operation
+Please enter a valid option: -------------------------
+|                       |
+| simpleCalculator in C |
+|                       |
+-------------------------
+| Addition          |'+'|
+| Subtraction       |'-'| (Coming soon)
+| Multiplication    |'*'| (Coming soon)
+| Division          |'/'| (Coming soon)
+| Help              |'h'|
+| Quit              |'q'|
+| Clear screen      |'c'|
+--> Enter '=' to finish, or 'm' to use the number in memory
+Quitting

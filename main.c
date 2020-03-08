@@ -3,8 +3,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
-#include "mathfunc.h"
-#include "misc.h"
+#include "./libs/mathfunc.h"
+#include "./libs/misc.h"
 
 char inputBuffer[14];
 double lastSumMemory = 0;
@@ -34,7 +34,10 @@ int main()
                 pressEnterToContinue();
                 break;
             case '-':
-                printf("subtraction\n");
+                printf("Type a number & press enter, repeat to keep subtracting.\n");
+                lastSumMemory = subtraction(inputBuffer, lastSumMemory);
+                printf("Result is %f\n\n", lastSumMemory);
+                pressEnterToContinue();
                 break;
             case '*':
                 printf("multiplication\n");
@@ -73,7 +76,7 @@ void printMenu()
     printf("-------------------------\n");
 
     printf("| Addition          |'+'|\n");
-    printf("| Subtraction       |'-'| (Coming soon)\n");
+    printf("| Subtraction       |'-'|\n");
     printf("| Multiplication    |'*'| (Coming soon)\n");
     printf("| Division          |'/'| (Coming soon)\n");
     printf("| Help              |'h'|\n");
