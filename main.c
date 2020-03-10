@@ -45,6 +45,12 @@ int main()
             case '/':
                 printf("division\n");
                 break;
+            case '!':
+                system("clear");
+                lastSumMemory = factorial(inputBuffer, lastSumMemory);
+                printf("Result is %f\n\n", lastSumMemory);
+                pressEnterToContinue();
+                break;
             case 'q':
                 system("clear");
                 printf("Quitting\n");
@@ -79,6 +85,7 @@ void printMenu()
     printf("| Subtraction       |'-'|\n");
     printf("| Multiplication    |'*'| (Coming soon)\n");
     printf("| Division          |'/'| (Coming soon)\n");
+    printf("| Factorial         |'!'|\n");
     printf("| Help              |'h'|\n");
     printf("| Quit              |'q'|\n");
     printf("| Clear screen      |'c'|\n");

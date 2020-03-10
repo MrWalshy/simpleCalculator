@@ -1,20 +1,19 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 #include "misc.h"
 
-void checkForMemLoad(char *inputBuffer, double lastSum, double *result)
+static bool checkForMemLoad(char *inputBuffer, double lastSum, double *result)
 {
     if (inputBuffer[0] == 'm')
         {
             *result = lastSum;
-            printf("Value in memory loaded: %f\n", lastSum);
-            getInput(inputBuffer);
+            printf("Value in memory loaded: %f\n", *result);
+
+            return true;
         } 
-        else
-        {
-            getInput(inputBuffer);
-        }
+        return false;
 }
 
 double addition(char *inputBuffer, double lastSum)
@@ -25,6 +24,7 @@ double addition(char *inputBuffer, double lastSum)
     while (inputBuffer[0] != '=')
     {
         checkForMemLoad(inputBuffer, lastSum, &result);
+        getInput(inputBuffer);
         result += atof(inputBuffer); // Adds inputBuffer as a float to result
     }
     
@@ -43,9 +43,27 @@ double subtraction(char *inputBuffer, double lastSum)
     while (inputBuffer[0] != '=')
     {
         checkForMemLoad(inputBuffer, lastSum, &result);
+        getInput(inputBuffer);
         result -= atof(inputBuffer);
     }
     
     system("clear");
+    return result;
+}
+
+double factorial(char *inputBuffer, double lastSum)
+{
+    double result;
+    int i;
+    printf("Enter the whole number you wish to find the factorial of\n");
+    getInput(inputBuffer);
+    result = atof(inputBuffer);
+    i = result;
+
+    for (i; i > 1; i--)
+    {
+        result = result * (i - 1);
+    }
+
     return result;
 }
