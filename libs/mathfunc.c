@@ -20,10 +20,13 @@ double addition(char *inputBuffer, double lastSum)
 {   
     double result = 0; // Initialise result to be returned
 
+    printf("Enter starting value\n");
+    getInput(inputBuffer);
+    if (!checkForMemLoad(inputBuffer, lastSum, &result)) result = atof(inputBuffer);
+
     // Check for exit condition
     while (inputBuffer[0] != '=')
     {
-        checkForMemLoad(inputBuffer, lastSum, &result);
         getInput(inputBuffer);
         result += atof(inputBuffer); // Adds inputBuffer as a float to result
     }
@@ -36,13 +39,13 @@ double subtraction(char *inputBuffer, double lastSum)
 {
     // Declared result, initialise with input from user for starting value
     double result;
+
     printf("Enter starting value\n");
     getInput(inputBuffer);
-    result = atof(inputBuffer);
+    if (!checkForMemLoad(inputBuffer, lastSum, &result)) result = atof(inputBuffer);
 
     while (inputBuffer[0] != '=')
     {
-        checkForMemLoad(inputBuffer, lastSum, &result);
         getInput(inputBuffer);
         result -= atof(inputBuffer);
     }
