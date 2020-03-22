@@ -1,0 +1,1 @@
+gcc main.c ./libs/mathfunc.c ./libs/misc.c -o calculator

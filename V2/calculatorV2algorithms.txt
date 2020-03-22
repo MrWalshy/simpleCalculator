@@ -1,0 +1,24 @@
+> Open the calculator function
+Pass in the inputBuffer to the openCalculator function
+Pass in the lastSumMemory variable
+
+>> Get a number
+Get input from the user
+Convert number to a double
+
+>> Get a operator
+Get the operator from the user
+If the operator is not valid
+  repeat this step
+
+>> Get another number
+If the operator was a factorial
+  skip this block
+else
+  Get input from the user
+  Convert number to a double
+
+>> Calculate the result
+Calculate the result
+Store the result in lastSumMemory
+Display the result
